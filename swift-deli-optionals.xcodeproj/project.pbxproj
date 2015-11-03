@@ -13,6 +13,8 @@
 		4D0F4D041BE952CE004F377E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F4D031BE952CE004F377E /* Assets.xcassets */; };
 		4D0F4D071BE952CE004F377E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F4D051BE952CE004F377E /* LaunchScreen.storyboard */; };
 		4D0F4D121BE952CE004F377E /* swift_deli_optionalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4D111BE952CE004F377E /* swift_deli_optionalsTests.swift */; };
+		4D0F4D1E1BE953FC004F377E /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4D1D1BE953FC004F377E /* Sandbox.swift */; };
+		4D0F4D201BE9540B004F377E /* SandboxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4D1F1BE9540B004F377E /* SandboxSpec.swift */; };
 		9BF165F2E08A68B76365E2D7 /* Pods_swift_deli_optionalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33F576BBEB2A7720FC0B8C /* Pods_swift_deli_optionalsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		4D0F4D0D1BE952CE004F377E /* swift-deli-optionalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-deli-optionalsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0F4D111BE952CE004F377E /* swift_deli_optionalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_deli_optionalsTests.swift; sourceTree = "<group>"; };
 		4D0F4D131BE952CE004F377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0F4D1D1BE953FC004F377E /* Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = "<group>"; };
+		4D0F4D1F1BE9540B004F377E /* SandboxSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxSpec.swift; sourceTree = "<group>"; };
 		9D33F576BBEB2A7720FC0B8C /* Pods_swift_deli_optionalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_deli_optionalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11ED103F7746951B6225EEB /* Pods-swift-deli-optionalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-deli-optionalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-deli-optionalsTests/Pods-swift-deli-optionalsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,11 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				4D0F4CFC1BE952CE004F377E /* AppDelegate.swift */,
-				4D0F4CFE1BE952CE004F377E /* ViewController.swift */,
-				4D0F4D001BE952CE004F377E /* Main.storyboard */,
-				4D0F4D031BE952CE004F377E /* Assets.xcassets */,
-				4D0F4D051BE952CE004F377E /* LaunchScreen.storyboard */,
-				4D0F4D081BE952CE004F377E /* Info.plist */,
+				4D0F4D1D1BE953FC004F377E /* Sandbox.swift */,
+				4D0F4D1C1BE953EE004F377E /* Resources */,
 			);
 			path = "swift-deli-optionals";
 			sourceTree = "<group>";
@@ -105,10 +106,23 @@
 		4D0F4D101BE952CE004F377E /* swift-deli-optionalsTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D0F4D1F1BE9540B004F377E /* SandboxSpec.swift */,
 				4D0F4D111BE952CE004F377E /* swift_deli_optionalsTests.swift */,
 				4D0F4D131BE952CE004F377E /* Info.plist */,
 			);
 			path = "swift-deli-optionalsTests";
+			sourceTree = "<group>";
+		};
+		4D0F4D1C1BE953EE004F377E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F4CFE1BE952CE004F377E /* ViewController.swift */,
+				4D0F4D001BE952CE004F377E /* Main.storyboard */,
+				4D0F4D031BE952CE004F377E /* Assets.xcassets */,
+				4D0F4D051BE952CE004F377E /* LaunchScreen.storyboard */,
+				4D0F4D081BE952CE004F377E /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		5AA58B83390CC2DBB569BA95 /* Pods */ = {
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0F4CFF1BE952CE004F377E /* ViewController.swift in Sources */,
+				4D0F4D1E1BE953FC004F377E /* Sandbox.swift in Sources */,
 				4D0F4CFD1BE952CE004F377E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0F4D201BE9540B004F377E /* SandboxSpec.swift in Sources */,
 				4D0F4D121BE952CE004F377E /* swift_deli_optionalsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
