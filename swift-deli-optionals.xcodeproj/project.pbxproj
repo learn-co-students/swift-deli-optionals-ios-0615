@@ -13,6 +13,7 @@
 		4D0F4D041BE952CE004F377E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F4D031BE952CE004F377E /* Assets.xcassets */; };
 		4D0F4D071BE952CE004F377E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F4D051BE952CE004F377E /* LaunchScreen.storyboard */; };
 		4D0F4D121BE952CE004F377E /* swift_deli_optionalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4D111BE952CE004F377E /* swift_deli_optionalsTests.swift */; };
+		9BF165F2E08A68B76365E2D7 /* Pods_swift_deli_optionalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33F576BBEB2A7720FC0B8C /* Pods_swift_deli_optionalsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CDC390708092CE203E31CF7 /* Pods-swift-deli-optionalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-deli-optionalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-deli-optionalsTests/Pods-swift-deli-optionalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D0F4CF91BE952CE004F377E /* swift-deli-optionals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-deli-optionals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0F4CFC1BE952CE004F377E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0F4CFE1BE952CE004F377E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		4D0F4D0D1BE952CE004F377E /* swift-deli-optionalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-deli-optionalsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0F4D111BE952CE004F377E /* swift_deli_optionalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_deli_optionalsTests.swift; sourceTree = "<group>"; };
 		4D0F4D131BE952CE004F377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D33F576BBEB2A7720FC0B8C /* Pods_swift_deli_optionalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_deli_optionalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11ED103F7746951B6225EEB /* Pods-swift-deli-optionalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-deli-optionalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-deli-optionalsTests/Pods-swift-deli-optionalsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF165F2E08A68B76365E2D7 /* Pods_swift_deli_optionalsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45D9C0D33E64CBBA5D09558A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D33F576BBEB2A7720FC0B8C /* Pods_swift_deli_optionalsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D0F4CF01BE952CE004F377E = {
 			isa = PBXGroup;
 			children = (
 				4D0F4CFB1BE952CE004F377E /* swift-deli-optionals */,
 				4D0F4D101BE952CE004F377E /* swift-deli-optionalsTests */,
 				4D0F4CFA1BE952CE004F377E /* Products */,
+				5AA58B83390CC2DBB569BA95 /* Pods */,
+				45D9C0D33E64CBBA5D09558A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			path = "swift-deli-optionalsTests";
 			sourceTree = "<group>";
 		};
+		5AA58B83390CC2DBB569BA95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CDC390708092CE203E31CF7 /* Pods-swift-deli-optionalsTests.debug.xcconfig */,
+				A11ED103F7746951B6225EEB /* Pods-swift-deli-optionalsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D0F4D191BE952CE004F377E /* Build configuration list for PBXNativeTarget "swift-deli-optionalsTests" */;
 			buildPhases = (
+				CA308DC2E49B8277ACBC7496 /* Check Pods Manifest.lock */,
 				4D0F4D091BE952CE004F377E /* Sources */,
 				4D0F4D0A1BE952CE004F377E /* Frameworks */,
 				4D0F4D0B1BE952CE004F377E /* Resources */,
+				B01088A7B429D81E117808AF /* Embed Pods Frameworks */,
+				08FBDAA90BE239EEE081BC25 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08FBDAA90BE239EEE081BC25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-deli-optionalsTests/Pods-swift-deli-optionalsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01088A7B429D81E117808AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-deli-optionalsTests/Pods-swift-deli-optionalsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA308DC2E49B8277ACBC7496 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D0F4CF51BE952CE004F377E /* Sources */ = {
@@ -345,6 +420,7 @@
 		};
 		4D0F4D1A1BE952CE004F377E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDC390708092CE203E31CF7 /* Pods-swift-deli-optionalsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-deli-optionalsTests/Info.plist";
@@ -357,6 +433,7 @@
 		};
 		4D0F4D1B1BE952CE004F377E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11ED103F7746951B6225EEB /* Pods-swift-deli-optionalsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-deli-optionalsTests/Info.plist";
@@ -386,6 +463,7 @@
 				4D0F4D181BE952CE004F377E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D0F4D191BE952CE004F377E /* Build configuration list for PBXNativeTarget "swift-deli-optionalsTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +472,7 @@
 				4D0F4D1B1BE952CE004F377E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
