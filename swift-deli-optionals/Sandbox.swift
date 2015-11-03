@@ -12,6 +12,7 @@ func stringForDeliLine(deliLine: [String]?) -> String? {
     
     if var deliLine = deliLine {
         if deliLine.count == 0 {
+            print("The line is currently empty.")
             return nil
         }
         
@@ -23,11 +24,13 @@ func stringForDeliLine(deliLine: [String]?) -> String? {
         print(result)
         return result
     } else {
+        print("The line is currently empty.")
         return nil
     }
 }
 
 func addNameTo(name: String, deliLine: [String]?) -> [String] {
+    
     if var deliLine = deliLine {
         deliLine.append(name)
         print("Welcome \(name)! You are number \(deliLine.count) in line.")
