@@ -42,44 +42,44 @@ class SandboxSpec: QuickSpec {
             }
         }
         
-        describe("addNameTo(_:deliLine:)") {
+        describe("addName(_:toDeliLine:)") {
             it("should create a new array with name 'Al' when the deliLine argument is nil") {
-                let result = addNameTo("Al", deliLine: empty)
+                let result = addName("Al", toDeliLine: empty)
                 let expected = ["Al"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("should create a new array with name 'Zach' when the deliLine argument is nil") {
-                let result = addNameTo("Zach", deliLine: empty)
+                let result = addName("Zach", toDeliLine: empty)
                 let expected = ["Zach"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("should add the name 'Al' to an empty array") {
-                let result = addNameTo("Al", deliLine: empty)
+                let result = addName("Al", toDeliLine: empty)
                 let expected = ["Al"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("should add the name 'Chris' to an empty array") {
-                let result = addNameTo("Chris", deliLine: empty)
+                let result = addName("Chris", toDeliLine: empty)
                 let expected = ["Chris"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("should add the name 'Dan' to the end of the 'precollege' array") {
-                let result = addNameTo("Dan", deliLine: precollege)
+                let result = addName("Dan", toDeliLine: precollege)
                 let expected = ["Victoria", "Danny", "Lyel", "Dan"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("should add the name 'Mark' to the end of the 'ios' array") {
-                let result = addNameTo("Mark", deliLine: ios)
+                let result = addName("Mark", toDeliLine: ios)
                 let expected = ["Joe", "Tim", "Jim", "Tom", "Mark"]
                 
                 expect(result).to(equal(expected))
