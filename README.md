@@ -29,5 +29,5 @@ Open the `swift-deli-optionals.xcworkspace` and navigate to the `Sandbox.swift` 
 3. Declare a function named `serveNextCustomerInDeliLine(_:)` which takes one argument, an **optional array** of strings, and returns an **optional array** of strings. The function should remove the first name from the array (there is a `removeFirst()` array method, but it cannot be called on an empty array), print a message for this "next customer" telling them it is their turn, and returning the array with the customer's name removed.
   * If the array argument is `nil` *or* empty, this function should print a string saying that the line is empty and return `nil`.
 
-
+<a href='https://learn.co/lessons/swift-deli-optionals' data-visibility='hidden'>View this lesson on Learn.co</a>
 
