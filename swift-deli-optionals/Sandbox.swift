@@ -32,9 +32,10 @@ func stringForDeliLine(deliLine: [String]?) -> String? {
 func addName(name: String, toDeliLine deliLine: [String]?) -> [String] {
     
     if let deliLine = deliLine {
-        deliLine.append(name)
-        print("Welcome \(name)! You are number \(deliLine.count) in line.")
-        return deliLine
+        var newDeliLine = deliLine
+        newDeliLine.append(name)
+        print("Welcome \(name)! You are number \(newDeliLine.count) in line.")
+        return newDeliLine
     } else {
         return [name]
     }
@@ -43,10 +44,11 @@ func addName(name: String, toDeliLine deliLine: [String]?) -> [String] {
 func serveNextCustomerInDeliLine(deliLine: [String]?) -> [String]? {
     
     if let deliLine = deliLine {
-        if deliLine.count > 0 {
-            let nextCustomer = deliLine.removeFirst()
+        var newDeliLine = deliLine
+        if newDeliLine.count > 0 {
+            let nextCustomer = newDeliLine.removeFirst()
             print("Now serving \(nextCustomer)")
-            return deliLine
+            return newDeliLine
         } else {
             print("The line is currently empty.")
             return nil
