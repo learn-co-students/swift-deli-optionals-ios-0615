@@ -10,7 +10,7 @@ import Foundation
 
 func stringForDeliLine(deliLine: [String]?) -> String? {
     
-    if var deliLine = deliLine {
+    if let deliLine = deliLine {
         if deliLine.count == 0 {
             print("The line is currently empty.")
             return nil
@@ -29,9 +29,9 @@ func stringForDeliLine(deliLine: [String]?) -> String? {
     }
 }
 
-func addNameTo(name: String, deliLine: [String]?) -> [String] {
+func addName(name: String, toDeliLine deliLine: [String]?) -> [String] {
     
-    if var deliLine = deliLine {
+    if let deliLine = deliLine {
         deliLine.append(name)
         print("Welcome \(name)! You are number \(deliLine.count) in line.")
         return deliLine
@@ -42,7 +42,7 @@ func addNameTo(name: String, deliLine: [String]?) -> [String] {
 
 func serveNextCustomerInDeliLine(deliLine: [String]?) -> [String]? {
     
-    if var deliLine = deliLine {
+    if let deliLine = deliLine {
         if deliLine.count > 0 {
             let nextCustomer = deliLine.removeFirst()
             print("Now serving \(nextCustomer)")
